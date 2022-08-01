@@ -1,12 +1,33 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import noto_serif_display from '../assets/fonts/noto/NotoSerifDisplay-VariableFont_wdth,wght.ttf';
+import playfair_display from '../assets/fonts/playfair/PlayfairDisplay-VariableFont_wght.ttf';
+import montserrat from '../assets/fonts/montserrat/Montserrat-VF.ttf';
 import { rem } from '../helpers/units';
 
 
+export const GlobalFonts = createGlobalStyle`
+@font-face {
+    font-family: 'Noto Serif Display', serif;
+    src: url(${noto_serif_display}) format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display', serif;
+    src: url(${playfair_display}) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(${montserrat}) format('ttf');
+}
+`;
+
 const GlobalStyles = createGlobalStyle`
 :root {
-    --primary: #1b101b;
+    --primary: #000000;
     --accent: #ffffff;
-    --purple: hsl(300, 100%, 25%);
+    --indigo: indigo;
+    --indigoLight: #523766;
 }
 html {
     position: relative;
@@ -47,7 +68,8 @@ body,
     width: 100%;
     height: 100%;
     font-size: ${rem(16)};
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat';
+    font-weight: 400;
     background: var(--accent);
     color: var(--primary);
     z-index: inherit;
@@ -63,11 +85,4 @@ export const AppWrapper = styled.main`
     height: 100%;
     z-index: 1;
     overflow: hidden;
-`;
-
-export const Section = styled.section`
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
 `;
