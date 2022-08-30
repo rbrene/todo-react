@@ -14,6 +14,7 @@ export const TasksArticle = styled(a.article)`
     height: 100%;
     background: var(--accent);
     color: var(--primary);
+    border-radius: inherit;
     z-index: inherit;
 `;
 
