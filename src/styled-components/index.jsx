@@ -1,33 +1,11 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import noto_serif_display from '../assets/fonts/noto/NotoSerifDisplay-VariableFont_wdth,wght.ttf';
-import playfair_display from '../assets/fonts/playfair/PlayfairDisplay-VariableFont_wght.ttf';
-import montserrat from '../assets/fonts/montserrat/Montserrat-VF.ttf';
 import { rem } from '../helpers/units';
 
 
-export const GlobalFonts = createGlobalStyle`
-@font-face {
-    font-family: 'Noto Serif Display', serif;
-    src: url(${noto_serif_display}) format('truetype');
-}
-
-@font-face {
-    font-family: 'Playfair Display', serif;
-    src: url(${playfair_display}) format('truetype');
-}
-
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url(${montserrat}) format('ttf');
-}
-`;
-
 const GlobalStyles = createGlobalStyle`
 :root {
-    --primary: #000000;
+    --primary: #232121;
     --accent: #ffffff;
-    --indigo: indigo;
-    --indigoLight: #523766;
 }
 html {
     position: relative;
@@ -68,10 +46,10 @@ body,
     width: 100%;
     height: 100%;
     font-size: ${rem(16)};
-    font-family: 'Montserrat';
-    font-weight: 400;
-    background: var(--accent);
-    color: var(--primary);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    background: inherit;
+    color: inherit;
     z-index: inherit;
     user-select: none;
 }

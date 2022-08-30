@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
-import GlobalStyles, { GlobalFonts } from './styled-components/index';
+import GlobalStyles from './styled-components/index';
 import App from './ui-core/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
@@ -9,7 +9,6 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalFonts />
     <GlobalStyles />
     <Router>
       <App />

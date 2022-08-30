@@ -11,9 +11,9 @@ export default function TasksList(props) {
         <TasksArticle>
             <Taskslist>
                 {tasks.length <= 0 ?
-                    <NoTasks children='You have no tasks' />
+                    <NoTasks children='' />
                     :
-                    tasks.map((task, i) => <Item title={task} />)
+                    tasks.map((task, i) => <Item title={task} key={i} />)
                 }
             </Taskslist>
         </TasksArticle>

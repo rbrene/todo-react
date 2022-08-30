@@ -4,10 +4,9 @@ import { rem, em } from '../../helpers/units';
 
 export const H1 = styled.h1`
     font-size: clamp(${rem(48)}, 6vw, ${rem(64)});
-    font-family: 'Montserrat';
-    font-weight: 800;
-    font-stretch: 150%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: inherit;
     text-transform: uppercase;
-    letter-spacing: ${em(2)};
+    letter-spacing: 0.5ch;
     line-height: 1.2;
 `;

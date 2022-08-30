@@ -18,7 +18,7 @@ export const CreateTask = () => {
     }
 
     return (
-        <TaskForm onSubmit={submit}>
+        <form onSubmit={submit}>
 
             <TaskInput
                 type='text'
@@ -27,6 +27,6 @@ export const CreateTask = () => {
                 placeholder='Create New Task'
             />
 
-        </TaskForm>
+        </form>
     )
 }
