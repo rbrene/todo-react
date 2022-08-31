@@ -9,4 +9,5 @@ export const H1 = styled.h1`
     text-transform: uppercase;
     letter-spacing: 0.5ch;
     line-height: 1.2;
+    color: ${({theme}) => theme.second};
 `;

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Section } from '../index';
-import { Container } from '../../layouts/index';
 import { animated as a } from '@react-spring/web';
 import { rem, em } from '../../../helpers/units';
 
@@ -12,8 +11,8 @@ export const TasksArticle = styled(a.article)`
     position: relative;
     width: 100%;
     height: 100%;
-    background: var(--accent);
-    color: var(--primary);
+    background: ${({theme}) => theme.main};
+    color: ${({theme}) => theme.second};
     border-radius: inherit;
     z-index: inherit;
 `;
@@ -37,7 +36,7 @@ export const Taskitem = styled(a.li)`
     letter-spacing: ${em(2)};
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    border-bottom: 1px solid #232121;
+    border-bottom: 1px solid ${({theme}) => theme.second};
     text-transform: capitalize;
     z-index: inherit;
 `;
@@ -53,7 +52,7 @@ export const NoTasks = styled(a.li)`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary);
+    color: ${({theme}) => theme.main};
 `;
 
 export const TaskAction = styled(a.span)`

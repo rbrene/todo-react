@@ -5,6 +5,7 @@ import { Grid, HeadingRow, HeadingRowWrapper, TasksRow, TasksRowWrapper } from '
 import TasksList from '../../components/Tasks/List';
 import { CreateTask } from '../../components/Forms';
 import { H1 } from '../../styled-components/components/typography';
+import Theme from '../../components/Theme';
 
 
 const Tasks = props => {
@@ -16,7 +17,10 @@ const Tasks = props => {
                 <Grid>
                     <HeadingRow>
                         <HeadingRowWrapper>
-                            <H1> Tasks </H1>
+                            <header>
+                                <H1> Tasks </H1>
+                                <Theme />
+                            </header>
                             <CreateTask />
                         </HeadingRowWrapper>
                     </HeadingRow>

@@ -18,6 +18,17 @@ export const Grid = styled(Container)`
 
 export const HeadingRow = styled(Container)`
     grid-row: 1;
+    background: ${({theme}) => theme.main};
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        svg {
+            width: ${rem(32)};
+            height: ${rem(32)};
+            color: ${({theme}) => theme.second};
+        }
+    }
 `;
 
 export const HeadingRowWrapper = styled(a.div)`
@@ -25,8 +36,6 @@ export const HeadingRowWrapper = styled(a.div)`
     max-width: ${rem(480)};
     height: 100%;
     margin-inline: auto;
-    /* background: indigo;
-    color: white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +45,7 @@ export const HeadingRowWrapper = styled(a.div)`
 export const TasksRow = styled(Container)`
     grid-row: 2;
     padding-block: ${rem(32)};
-    background: #232121;
+    background: ${({theme}) => theme.second};
 `;
 
 export const TasksRowWrapper = styled(a.div)`
@@ -44,7 +53,7 @@ export const TasksRowWrapper = styled(a.div)`
     max-width: ${rem(480)};
     height: 100%;
     margin-inline: auto;
-    background: #fff;
+    background: ${({theme}) => theme.second};
     border-radius: ${rem(8)};
     z-index: inherit;
 

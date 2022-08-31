@@ -22,12 +22,12 @@ export const Input = styled(a.input)`
     padding-inline: ${rem(16)};
     font-family: inherit;
     font-weight: 500;
-    background: #232121;
+    background: ${({theme}) => theme.second};
     border: none;
     border-radius: ${em(8)};
     outline: none;
     letter-spacing: ${em(1)};
-    color: #fff;
+    color: ${({theme}) => theme.main};
 `;
 
 export const Checkbox = styled(a.input)`
@@ -36,7 +36,7 @@ export const Checkbox = styled(a.input)`
     height: ${rem(20)};
     background: transparent;
     outline: none;
-    border: 2px solid #232121;
+    border: 2px solid ${({theme}) => theme.second};
     border-radius: 50%;
     appearance: none;
 
@@ -45,7 +45,7 @@ export const Checkbox = styled(a.input)`
         position: absolute;
         width: 100%;
         height: 100%;
-        background: #232121;
+        background: ${({theme}) => theme.second};
         border-radius: 50%;
         transform: scale(0);
         transition: transform 0.3s ease-in-out;
