@@ -51,7 +51,7 @@ export const Checkbox = styled(a.input)`
         transition: transform 0.3s ease-in-out;
         z-index: inherit
     }
-    &:checked[type='checkbox']::before {
+    &:checked::before {
         transform: scale(1);
     }
 `;

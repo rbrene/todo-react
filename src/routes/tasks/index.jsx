@@ -9,11 +9,11 @@ import Theme from '../../components/Theme';
 
 
 const Tasks = props => {
-    const [ tasks, setTasks ] = useState([]);
+    const [tasks, setTasks] = useState([]);
 
     return (
         <TasksSection>
-            <TasksContext.Provider value={{tasks, setTasks}}>
+            <TasksContext.Provider value={{tasks, setTasks }}>
                 <Grid>
                     <HeadingRow>
                         <HeadingRowWrapper>
