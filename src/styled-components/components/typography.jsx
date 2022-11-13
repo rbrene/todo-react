@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { rem, em } from '../../helpers/units';
+import { rem } from '../../helpers/units';
 
 
 export const H1 = styled.h1`
